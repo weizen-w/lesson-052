@@ -38,9 +38,9 @@ public class Main {
       int indexMid = (left + right) / 2;
       int mid = list.get(indexMid);
       if (mid > target) {
-        left = mid + 1;
+        left = indexMid + 1;
       } else if (mid < target) {
-        right = mid - 1;
+        right = indexMid - 1;
       } else {
         return indexMid;
       }
