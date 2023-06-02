@@ -35,7 +35,7 @@ public class Main {
     int left = 0;
     int right = list.size();
     while (left < right - 1) {
-      int indexMid = (left + right) / 2;
+      int indexMid = (left + (right - left) / 2) ;
       int mid = list.get(indexMid);
       if (mid > target) {
         left = indexMid + 1;
